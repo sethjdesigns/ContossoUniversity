@@ -5,6 +5,22 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContossoUniversity", "ContossoUniversity\ContossoUniversity.csproj", "{CDFC29B4-E8D5-41CC-B600-CADA85417D10}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{219A695F-76EC-421D-92E9-C417B55A6AF8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{099D21B3-9C16-4B44-AD20-F0F8277F97E4}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\ContossoUniversity-WAWS-dev.json = PublishScripts\Configurations\ContossoUniversity-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{747744FE-F8B8-4A16-A0AD-6606A8DE98D1}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{099D21B3-9C16-4B44-AD20-F0F8277F97E4} = {219A695F-76EC-421D-92E9-C417B55A6AF8}
 	EndGlobalSection
 EndGlobal
