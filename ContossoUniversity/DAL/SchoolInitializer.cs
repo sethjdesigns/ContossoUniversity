@@ -57,7 +57,8 @@ namespace ContossoUniversity.DAL
              };
 
              enrollments.ForEach(s => context.Enrollments.Add(s));
-             context.SaveChanges();
+             context.SaveChanges();
+
         }
     }
 }
