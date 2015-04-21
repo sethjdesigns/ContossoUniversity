@@ -132,8 +132,10 @@ namespace ContossoUniversity.Controllers
         {
             try
             {
-                Student student = db.Students.Find(id);
-                db.Students.Remove(student);
+
+                Student studentToDelete = new Student() { ID = id };
+                db.Entry(studentToDelete).State = EntityState.Deleted;
+
                 db.SaveChanges();
                 
             }
