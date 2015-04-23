@@ -55,6 +55,11 @@ textarea {
     color: #9a1515!important;
     display: block;
     text-decoration: none;
+
+
+.search-box
+{
+    float: left;
 }
 
 .page-title {
