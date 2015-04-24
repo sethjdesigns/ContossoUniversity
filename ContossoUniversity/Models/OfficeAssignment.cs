@@ -10,6 +10,7 @@ namespace ContossoUniversity.Models
         [StringLength(50)]
         [Display(Name = "Office Location")]
         public string Location { get; set; }
+
         public virtual Instructor Instructor { get; set; }
     }
 }
