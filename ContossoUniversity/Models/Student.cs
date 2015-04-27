@@ -20,7 +20,7 @@ namespace ContossoUniversity.Models
         [Required]
         public string FirstMidName { get; set; }
         [Display(Name = "Enrollment Date:"), DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]
+        //[RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]
         public DateTime EnrollmentDate { get; set; }
         [Display(Name = "Email Address")]
         public string EmailAddress { get; set; }
@@ -32,7 +32,8 @@ namespace ContossoUniversity.Models
             {
                 return LastName + ", " + FirstMidName;
             }
-        }
+        }
+
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }

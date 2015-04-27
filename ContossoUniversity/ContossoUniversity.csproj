@@ -161,21 +161,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201504231950167_InitialCreate.cs" />
-    <Compile Include="Migrations\201504231950167_InitialCreate.Designer.cs">
-      <DependentUpon>201504231950167_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201504271859097_redoDb2.cs" />
+    <Compile Include="Migrations\201504271859097_redoDb2.Designer.cs">
+      <DependentUpon>201504271859097_redoDb2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201504241320444_MaxLengthOnNames.cs" />
-    <Compile Include="Migrations\201504241320444_MaxLengthOnNames.Designer.cs">
-      <DependentUpon>201504241320444_MaxLengthOnNames.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504241325311_ColumnFirstName.cs" />
-    <Compile Include="Migrations\201504241325311_ColumnFirstName.Designer.cs">
-      <DependentUpon>201504241325311_ColumnFirstName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504271505014_elevenam.cs" />
-    <Compile Include="Migrations\201504271505014_elevenam.Designer.cs">
-      <DependentUpon>201504271505014_elevenam.cs</DependentUpon>
+    <Compile Include="Migrations\201504271906225_nodattime.cs" />
+    <Compile Include="Migrations\201504271906225_nodattime.Designer.cs">
+      <DependentUpon>201504271906225_nodattime.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
@@ -243,17 +235,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201504231950167_InitialCreate.resx">
-      <DependentUpon>201504231950167_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201504271859097_redoDb2.resx">
+      <DependentUpon>201504271859097_redoDb2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504241320444_MaxLengthOnNames.resx">
-      <DependentUpon>201504241320444_MaxLengthOnNames.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504241325311_ColumnFirstName.resx">
-      <DependentUpon>201504241325311_ColumnFirstName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504271505014_elevenam.resx">
-      <DependentUpon>201504271505014_elevenam.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201504271906225_nodattime.resx">
+      <DependentUpon>201504271906225_nodattime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
