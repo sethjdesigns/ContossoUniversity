@@ -8,7 +8,9 @@ using System.Web;
 using System.Web.Mvc;
 using ContossoUniversity.DAL;
 using ContossoUniversity.Models;
-using System.Data.Entity.Infrastructure;using PagedList;
+using System.Data.Entity.Infrastructure;
+using PagedList;
+
 
 namespace ContossoUniversity.Controllers
 {
@@ -17,7 +19,7 @@ namespace ContossoUniversity.Controllers
         private SchoolContext db = new SchoolContext();
 
         // GET: Student
-        public ActionResult Index(string sortOrder, string currentFilter, string searchString, int? page)
+        public ActionResult Index(string sortOrder,  string currentFilter, string searchString, int? page)
         {
             ViewBag.CurrentSort = sortOrder;
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
@@ -104,7 +106,8 @@ namespace ContossoUniversity.Controllers
             {
                 //Log the error (uncomment dex variable name and add a line here to write a log.
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
-            }
+            }
+
             return View(student);
         }
 

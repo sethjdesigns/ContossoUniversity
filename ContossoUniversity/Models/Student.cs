@@ -17,7 +17,7 @@ namespace ContossoUniversity.Models
         [Display(Name = "First Name")][StringLength(50, ErrorMessage = "First name cannot be longer than 50 characters.")]
         [RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]
         [Column("FirstName")]
-        [Required]
+        [Required] 
         public string FirstMidName { get; set; }
         [Display(Name = "Enrollment Date:"), DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         //[RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]
